@@ -24,5 +24,24 @@ At the end of this workshop, you will be able to:
 | 0:20 | Customizing LLMs - Fine tuning |
 | 0:50 | Wrap-up and Discussion |
 
+
+## Slides
+Find the workshop slides below or <a href="slides/introduction.html" target="_blank">open it in a new tab</a>:
+
+<div style="overflow: hidden;
+  padding-top: 56.25%;
+  position: relative">
+  <iframe src="slides/introduction.html" title="demo embedded slide deck" scrolling="no" frameborder="0"
+    style="border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;">
+   <p>Your browser does not support iframes.</p>
+ </iframe>
+</div>
+
+
 ## Resources
 * [eg. link to external slides]
