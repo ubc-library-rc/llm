@@ -39,6 +39,105 @@
 
 	<div class="slides">
 
+		<section>
+			<h3>Introduction to Large Language Models (LLMs)</h3>
+			https://ubc-library-rc.github.io/llm/
+			<aside class="notes">
+				<p>
+					| 0:00 | Welcome and using Zoom|
+					| 0:05 | About LLM - Working |  
+					| 0:20 | Customizing LLMs - Fine tuning |
+					| 0:50 | Wrap-up and Discussion |
+				</p>
+			</aside>
+		</section>
+
+		<section style="text-align: left;">
+			<h3>Land Acknowledgement</h3>
+			<p>UBC Vancouver is located on the traditional, ancestral, and unceded territory of the xʷməθkʷəy̓əm (Musqueam) peoples.</p>
+			<aside class="notes">
+				<p>
+				But before going into more details I would like to begin by acknowledging that I .
+				</p>
+			</aside>
+		</section>
+
+
+		<section>
+			Use the Zoom toolbar to engage
+			<img  data-src="../content/zoom-figures/zoom_toolbar.png" alt="The Zoom toolbar">
+			<div class="fragment">
+				<p style="font-size: smaller"><em>Participants</em> window</p>
+				<img data-src="../content/zoom-figures/participants_window_menu.png" alt="The participants menu">
+			</div>
+			<aside class="notes">
+				<p>
+				Active participation makes the session so much fun and gives me and your peers much more energy. We are
+				all sitting in our offices with little sound. Your voices and perspectives enlivens the session. We encourage
+				you to engage with each other and instructors.
+
+				The participants window lists everyone in the session and click the icons at the bottom to communicate with
+				the instructors.
+
+				You can also use the Chat windows to comment or ask questions at any time. It is also a good place to share
+				problems with your audio connection.
+				</p>
+			</aside>
+		</section>
+
+		<section data-background="#e6f7ff">
+			<h3>Learning Objectives</h3>
+			<ul>
+				<li class="fragment fade-in-then-semi-out"> Understand architecture and working of LLM</li>
+				<li class="fragment fade-in-then-semi-out"> Gain knowledge of some popular pre-trained LLM models</li>
+				<li class="fragment fade-in-then-semi-out"> Fine tune pre-trained LLM model to customize for a sample dataset.</li>
+			</ul>
+			<aside class="notes">
+				<p>
+				So, to touch various viewpoints of LLMs, we have the following learning objectives for this workshop:
+				</p>
+			</aside>
+		</section>
+
+		<section data-background="#e6f7ff">
+			<h3>Pre-workshop setup</h3>
+			<ul>
+				<li class="fragment fade-in-then-semi-out">GOOGLE COLAB <a href="https://colab.research.google.com/">(https://colab.research.google.com/)</a></li>
+			</ul>
+			<aside class="notes">
+				<p>
+					For hands-on exercises, we will use [Python](https://www.python.org/) on [Jupyter Notebooks](https://jupyter.org/). You don’t need to have Python installed. Please make sure that you have a [UBC Syzygy](https://ubc.syzygy.ca/) or a [Google Colaboratory](https://colab.research.google.com/) account. (You will need a CWL login to access Syzygy.)
+
+					hands-on exercises, programming tools and libraries, such as [Python] and [scikit-learn] prior familiarity with Python programming is recommended, we do not study the codes in detail
+				</p>
+			</aside>
+		</section>
+
+
+		<section data-background="#e6f7ff">
+			<h3>What are Large Language Models?</h3>
+			<ul>
+				<li class="fragment fade-in-then-semi-out">Large Language Models (LLMs) are artificial intelligence systems designed to understand and generate human-like language.</li>
+				<li class="fragment fade-in-then-semi-out">LLMs are fundamental to natural language processing, powering applications like chatbots, language translation, and content generation.</li>
+			</ul>
+			<aside class="notes">
+				<p>
+					
+				</p>
+			</aside>
+		</section>
+
+		<section data-background="#e6f7ff">
+			<h3>Applications of LLMs</h3>
+			<img height="500px" src="applications.jpeg">
+			Image Source: Appypie
+			<aside class="notes">
+				<p>
+					
+				</p>
+			</aside>
+		</section>
+
     <section data-background="#002145">
       <h3>UBC Library <br> Research Commons</h3>
       <blockquote>A multidisciplinary hub supporting research endeavours, partnerships, and education.</blockquote>
