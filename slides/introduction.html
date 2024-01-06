@@ -115,6 +115,27 @@
 
 
 		<section data-background="#e6f7ff">
+			<h3>Background</h3>
+			<ul>
+				<li class="fragment fade-in-then-semi-out">Neural Networks: A type of machine learning process, called deep learning, that uses interconnected nodes or neurons in a layered structure that resembles the human brain.</li>
+				<ul>
+					<li> RNN: a type of neural network designed to work with sequence data. Explore LSTMs and GRUs, two RNN variants that are capable of learning long-term dependencies.</li>
+				</ul>
+				<li class="fragment fade-in-then-semi-out">Natural Language Proceesing: A branch of AI—concerned with giving computers the ability to understand text and spoken words in much the same way human beings can.</li>
+				<ul>
+					<li> Text Preprocessing: Tokenization (splitting text into words or sentences), stemming (reducing words to their root form), lemmatization (similar to stemming but considers the context), stop word removal.</li>
+					<li> Feature Extraction Techniques: Converting text data into a format that can be understood by machine learning algorithms. Key methods include Bag-of-words (BoW), Term Frequency-Inverse Document Frequency (TF-IDF), and n-grams.</li>
+					<li> Word Embeddings: Word embeddings are a type of word representation that allows words with similar meanings to have similar representations. Key methods include Word2Vec, GloVe, and FastText.</li>
+				</ul>
+			</ul>
+			<aside class="notes">
+				<p>
+					
+				</p>
+			</aside>
+		</section>
+
+		<section data-background="#e6f7ff">
 			<h3>What are Large Language Models?</h3>
 			<ul>
 				<li class="fragment fade-in-then-semi-out">Large Language Models (LLMs) are artificial intelligence systems designed to understand and generate human-like language.</li>
@@ -133,7 +154,7 @@
 				<li class="fragment fade-in-then-semi-out">Excerise 1: The cat sat on a _____. </li>
 				<li class="fragment fade-in-then-semi-out" style="color: blue;">LLM says: "The cat sat on a sunny windowsill, basking in the warmth of the afternoon sun."</li>
 				<li class="fragment fade-in-then-semi-out">Excerise 2: Tell me a two sentence story of a dog named Pluto</li>
-				<li class="fragment fade-in-then-semi-out" style="color: blue;">LLM says: "Pluto, a spirited golden retriever with a heart full of curiosity, embarked on a solo adventure through the bustling city streets. With a wagging tail and a friendly demeanor, he charmed everyone he met, ultimately leading him to a cozy park where he found a group of new friends eager to share their snacks and play fetch with him until the sun dipped below the horizon."</li>
+				<li class="fragment fade-in-then-semi-out" style="color: blue;">LLM says: "Pluto, a spirited golden retriever with a heart full of curiosity, embarked on a solo adventure through the bustling city streets. With a wagging tail and a friendly demeanor, he charmed everyone..."</li>
 			</ul>
 			<aside class="notes">
 				<p>
@@ -158,7 +179,7 @@
 
 		<section data-background="#e6f7ff">
 			<h3>Many such applications of LLMs</h3>
-			<img height="600px" src="applications.jpeg">
+			<img height="400px" src="applications.jpeg">
 			<p style="color:blue;font-size:11px;"> From Appypie</p>
 			<aside class="notes">
 				<p>
@@ -169,8 +190,13 @@
 
 		<section data-background="#e6f7ff">
 			<h3>Architecture of a typical LLM</h3>
-			<img height="600px" src="applications.jpeg">
-			<p style="color:blue;font-size:11px;"> From Appypie</p>
+			<ul>
+				<li class="fragment fade-in-then-semi-out">Encoder-Decoder Transformer</li>
+				<li class="fragment fade-in-then-semi-out">Tokenization</li>
+				<li class="fragment fade-in-then-semi-out">Attention</li>
+				<li class="fragment fade-in-then-semi-out">Text generation</li>
+				
+			</ul>
 			<aside class="notes">
 				<p>
 					
@@ -181,7 +207,7 @@
 
 		<section data-background="#e6f7ff">
 			<h3>Working of LLM in production</h3>
-			<img height="600px" src="working.png">
+			<img height="400px" src="working.png">
 			<p style="color:blue;font-size:11px;"> From TDS</p>
 			<aside class="notes">
 				<p>
@@ -207,8 +233,22 @@
 
 		<section data-background="#e6f7ff">
 			<h3>Fine tuning LLMs</h3>
-			<img height="600px" src="fine_tune.png">
+			<img height="400px" src="fine_tune.png">
 			<p style="color:blue;font-size:11px;"> From Medium</p>
+			<aside class="notes">
+				<p>
+					
+				</p>
+			</aside>
+		</section>
+
+		<section data-background="#e6f7ff">
+			<h3>Fine tuning LLMs</h3>
+			<ul>
+				<li class="fragment fade-in-then-semi-out"> Full fine-tuning: Full fine-tuning refers to training all the parameters in the model. It is not an efficient technique, but it produces slightly better results. </li>
+				<li class="fragment fade-in-then-semi-out"> LoRA: A parameter-efficient technique (PEFT) based on low-rank adapters. Instead of training all the parameters, we only train these adapters.</li>
+				
+			</ul>
 			<aside class="notes">
 				<p>
 					
@@ -218,7 +258,7 @@
 
 		<section>
 			<h3>Open Jupyter Notebooks</h3>
-			<a target="_blank" href="https://colab.research.google.com/drive/1VcHK_cmU-3s-lJHvmISgmvq5zw1L7h2j?usp=sharing">
+			<a target="_blank" href="https://colab.research.google.com/drive/1PEQyJO1-f6j0S_XJ8DV50NkpzasXkrzd?usp=sharing">
 				<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 			  </a>
 			<aside class="notes">
