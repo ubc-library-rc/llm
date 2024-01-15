@@ -21,8 +21,8 @@ At the end of this workshop, you will be able to:
 
 | 0:00 | Welcome and using Zoom|
 | 0:05 | About LLM - Working |  
-| 0:20 | Customizing LLMs - Fine tuning |
-| 0:50 | Wrap-up and Discussion |
+| 0:35 | Customizing LLMs - Fine tuning |
+| 1:00 | Wrap-up and Discussion |
 
 
 ## Slides
@@ -44,4 +44,6 @@ Find the workshop slides below or <a href="slides/introduction.html" target="_bl
 
 
 ## Resources
-* [eg. link to external slides]
+* <a target="_blank" href="https://colab.research.google.com/drive/1PEQyJO1-f6j0S_XJ8DV50NkpzasXkrzd?usp=sharing">
+				<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+			  </a>
