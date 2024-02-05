@@ -14,8 +14,8 @@ In this workshop, we will use cloud-based platforms, so you don’t need to have
 
 At the end of this workshop, you will be able to:
 1. Understand architecture and working of LLM
-2. Gain knowledge of some popular pre-trained LLM models
-3. Fine tune pre-trained LLM model to customize for a sample dataset. 
+2. Fine tune pre-trained LLM model to customize for a sample dataset
+3. Understand various aspects of using LLMs for research.
 
 ## Schedule
 
