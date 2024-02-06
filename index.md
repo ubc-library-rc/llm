@@ -21,7 +21,7 @@ At the end of this workshop, you will be able to:
 
 | 0:00 | Welcome and using Zoom|
 | 0:05 | About LLM - Working |  
-| 0:35 | Customizing LLMs - Fine tuning |
+| 0:45 | Customizing LLMs - Fine tuning |
 | 1:00 | Wrap-up and Discussion |
 
 
