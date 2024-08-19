@@ -1,6 +1,6 @@
 ---
 layout: default
-title: AI Literacy and Ethical AI
+title: Understanding Large Language Models
 nav_order: 4
 ---
 # Understanding Large Language Models (LLMs)

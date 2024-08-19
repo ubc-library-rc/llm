@@ -1,10 +1,10 @@
 ---
 layout: default
-title: AI Literacy and Ethical AI
+title: Concepts in Large Language Models
 nav_order: 5
 ---
 
-# Mechanisms of Large Language Models
+# Concepts in Large Language Models
 
 ### Tokenization
 
