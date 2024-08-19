@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI Literacy and Ethical AI
-nav_order: 6
+nav_order: 7
 ---
 # What is AI Literacy? 
 

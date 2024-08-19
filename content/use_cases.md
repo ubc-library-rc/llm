@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Use Cases for LLMs in Research
-nav_order: 5
+nav_order: 6
 ---
 
 # Use Cases for Large Language Models (LLMs) in Research
