@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Use Cases for LLMs in Research
+title: Use Cases for LLMs
 nav_order: 6
 ---
 
-# Use Cases for Large Language Models (LLMs) in Research
+# Use Cases for Large Language Models (LLMs)
 
 Large Language Models (LLMs) offer a broad range of applications that can significantly impact various research fields. These models can assist researchers in multiple ways, from automating repetitive tasks to generating insights from large volumes of data. Here’s an overview of how LLMs can support research across different domains, including both engineering and humanities.
 
