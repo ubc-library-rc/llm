@@ -38,7 +38,7 @@ LLMs are typically built on neural network architectures called transformers. He
 
 ![LLM Architecture](https://scientyficworld.org/wp-content/uploads/2024/03/LLM_architecture.webp)
 
-Image from: 9https://scientyficworld.org/how-do-large-language-models-work/0
+Image from: https://scientyficworld.org/how-do-large-language-models-work/0
 
 ## Training and Fine-Tuning
 
