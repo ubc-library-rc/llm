@@ -42,7 +42,7 @@ This process is common in fine-tuning tasks because it ensures that the model's 
 
 ## Embeddings
 
-**Embeddings** are numerical representations of words or tokens in a continuous vector space. They are crucial in enabling models to understand and process language. Unlike one-hot encoding, which represents words as discrete, high-dimensional vectors, embeddings capture semantic relationships between words in a dense, lower-dimensional space.
+**Embeddings** are numerical representations of words or tokens in a continuous vector space. They are crucial in enabling models to understand and process language. Unlike one-hot encoding, which represents words as discrete, high-dimensional vectors, embeddings capture semantic relationships<sup id="fnref1"><a href="#fn1" class="footnote-ref">1</a></sup> between words in a dense, lower-dimensional space.
 
 ### How Embeddings Work
 - **Dense Vectors**: Each word is represented by a dense vector of fixed size, where each dimension captures a different aspect of the word's meaning.
@@ -83,3 +83,13 @@ Image from: https://machinelearningmastery.com/a-gentle-introduction-to-position
 [Complete Guide to Subword Tokenization Methods in the Neural Era](https://blog.octanove.org/guide-to-subword-tokenization/)
 [Summary of the tokenizers](https://huggingface.co/docs/transformers/tokenizer_summary)
 [Word Embedding: Basics](https://medium.com/@hari4om/word-embedding-d816f643140)
+
+
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn1">
+Semantic relationships refer to the connections between words based on their meanings. In the context of embeddings, this means that words with similar meanings or usage contexts are represented by vectors that are closer together in the vector space. For example, words like "king" and "queen" might be close to each other because they share similar semantic properties. This proximity helps models understand and process language more effectively.<a href="#fnref1" class="footnote-back">↩</a>
+</li>
+</ol>
+</div>
