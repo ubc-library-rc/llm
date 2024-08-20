@@ -45,7 +45,7 @@ Image from: 9https://scientyficworld.org/how-do-large-language-models-work/0
 Training LLMs involves several crucial steps to ensure the model learns effectively and performs well on various tasks. This section explores the general training process and various fine-tuning techniques.
 
 ### 1. Data Collection
-- **Diverse Datasets**: LLMs are trained on extensive and varied Corpora[^1] that include text from books, articles, websites, and other sources. The diversity of the data helps the model learn a broad range of language patterns and knowledge.
+- **Diverse Datasets**: LLMs are trained on extensive and varied Corpora<sup id="fnref1"><a href="#fn1" class="footnote-ref">1</a></sup> that include text from books, articles, websites, and other sources. The diversity of the data helps the model learn a broad range of language patterns and knowledge.
 
 ### 2. Pre-Training
 - **Objective**: The primary goal of pre-training is to enable the model to grasp general language patterns, grammar, and facts. This involves predicting the next token in a sequence (e.g., predicting the next word in a sentence) using a large-scale dataset.
@@ -108,4 +108,11 @@ Various Fine-Tuning methods can be employed, including:
 5. [ReFT: Enhancing LLMs with reinforced fine-tuning](https://www.superannotate.com/blog/reinforced-fine-tuning#:~:text=Fine%2Dtuning%20is%20a%20key,the%20standard%20fine%2Dtuning%20process.)
 6. [Single Vs Multi-Task LLM Instruction Fine-Tuning](https://pub.towardsai.net/single-vs-multi-task-llm-instruction-fine-tuning-2d75c4d235c7)
 
-[^1] Corpora (singular: "corpus") refers to large and structured sets of textual data. In the context of LLMs, corpora are collections of written or spoken texts that serve as the training data, helping the model to learn language patterns, syntax, semantics, and other linguistic elements. These datasets can include diverse sources such as books, research papers, websites, social media posts, and more, contributing to the richness and generalizability of the model's knowledge[^1].
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn1">
+Corpora (singular: "corpus") refers to large and structured sets of textual data. In the context of LLMs, corpora are collections of written or spoken texts that serve as the training data, helping the model to learn language patterns, syntax, semantics, and other linguistic elements. These datasets can include diverse sources such as books, research papers, websites, social media posts, and more, contributing to the richness and generalizability of the model's knowledge. <a href="#fnref1" class="footnote-back">↩</a>
+</li>
+</ol>
+</div
