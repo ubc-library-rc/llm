@@ -1,17 +1,37 @@
+
 document.addEventListener('DOMContentLoaded', function() {
-    Reveal.on('slidechanged', function(event) {
-        const square1 = document.getElementById('highlight-square-1');
-        const square2 = document.getElementById('highlight-square-2');
-        
-        // Clear all highlights
-        square1.classList.remove('show');
-        square2.classList.remove('show');
-        
-        // Highlight based on slide index
-        if (event.indexh === 0) { // Example: Highlight first square on the first slide
-            square1.classList.add('show');
-        } else if (event.indexh === 1) { // Example: Highlight second square on the second slide
-            square2.classList.add('show');
-        }
-    });
+// Function to show highlight
+function showHighlight(id) {
+    var element = document.getElementById(id);
+    if (element) {
+    element.classList.add('show');
+    }
+}
+
+// Function to hide highlight
+function hideHighlight(id) {
+    var element = document.getElementById(id);
+    if (element) {
+    element.classList.remove('show');
+    }
+}
+
+// Example of showing highlights on page load
+showHighlight('highlight-square-1');
+showHighlight('highlight-square-2');
+
+// You can also set up event listeners or other interactions
+// For example, toggle highlight visibility with a button
+document.getElementById('toggle-highlights').addEventListener('click', function() {
+    var highlight1 = document.getElementById('highlight-square-1');
+    var highlight2 = document.getElementById('highlight-square-2');
+
+    if (highlight1.classList.contains('show')) {
+    hideHighlight('highlight-square-1');
+    hideHighlight('highlight-square-2');
+    } else {
+    showHighlight('highlight-square-1');
+    showHighlight('highlight-square-2');
+    }
+});
 });
