@@ -24,21 +24,21 @@ LLMs are typically built on neural network architectures called transformers. He
    - **Tokenization**: The first step involves breaking down text into smaller units called tokens. These tokens can be words, characters, or subwords.
    - **Embedding**: Tokens are converted into numerical vectors (embeddings) that represent their meanings. This transformation allows the model to process and understand the tokens in a mathematical form.
 
-2. **Transformer Blocks**:
+2. **Positional Encoding**:
+   - **Encoding Token Position**: Since transformers do not inherently understand the order of tokens, positional encodings are added to embeddings. These encodings provide information about the position of each token in the sequence, enabling the model to consider the order when processing the text. Each token's final representation is a combination of its word embedding and positional encoding, allowing the model to consider both the token's meaning and its location in the sentence.
+
+3. **Transformer Blocks**:
    - **Self-Attention Mechanism**: Each token in the input text is compared with every other token to determine its relevance. This mechanism helps the model to weigh the importance of different words in the context of each other, capturing relationships and dependencies across the entire sequence.
    - **Multi-Head Attention**: Multiple attention mechanisms (heads) are used in parallel to capture different aspects of the token relationships. This allows the model to focus on various parts of the text simultaneously, providing a richer representation.
    - **Feed-Forward Neural Networks**: After the attention mechanism, the data is passed through feed-forward neural networks. These networks apply transformations to further process and refine the token representations.
    - **Layer Normalization and Residual Connections**: To improve training stability and efficiency, normalization techniques are applied, and residual connections are used to help gradients flow through the network.
-
-3. **Positional Encoding**:
-   - **Encoding Token Position**: Since transformers do not inherently understand the order of tokens, positional encodings are added to embeddings. These encodings provide information about the position of each token in the sequence, enabling the model to consider the order when processing the text.
 
 4. **Output Layer**:
    - **Text Generation**: The processed token representations are used to generate output text. In the case of generative models like GPT, this involves predicting the next word or sequence of words based on the input context.
 
 ![LLM Architecture](https://scientyficworld.org/wp-content/uploads/2024/03/LLM_architecture.webp)
 
-Image from: https://scientyficworld.org/how-do-large-language-models-work/
+Image from: 9https://scientyficworld.org/how-do-large-language-models-work/0
 
 ## Training and Fine-Tuning
 
