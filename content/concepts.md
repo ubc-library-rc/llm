@@ -79,10 +79,88 @@ This process is common in fine-tuning tasks because it ensures that the model's 
 ![Positional EncodingExample](https://machinelearningmastery.com/wp-content/uploads/2022/01/PE1.png)
 Image from: https://machinelearningmastery.com/a-gentle-introduction-to-positional-encoding-in-transformer-models-part-1/
 
+## Quantization
+
+**Quantization** is a technique used to reduce the computational and memory footprint of machine learning models, including large language models (LLMs). It involves mapping continuous values (like those in model weights) to a smaller set of discrete values. This process can significantly improve the efficiency of deploying models without a substantial loss in performance.
+
+### Types of Quantization
+
+1. **Post-Training Quantization**:
+   - Applied after the model has been trained.
+   - Reduces precision of weights and activations (e.g., from 32-bit floating point to 8-bit integers).
+
+2. **Quantization-Aware Training (QAT)**:
+   - Involves training the model with quantization in mind.
+   - Helps the model adjust to the lower precision during training, leading to better performance after quantization.
+
+### Benefits
+
+- **Reduced Model Size**: Smaller model size means less storage requirement.
+- **Faster Inference**: Lower precision computations are faster and require less power.
+- **Lower Memory Usage**: Decreased memory footprint allows deployment on resource-constrained devices.
+
+### Example
+
+- **Original Weights**: 32-bit floating point values.
+- **Quantized Weights**: 8-bit integer values.
+
+[Example of Quantization](https://static.wixstatic.com/media/d9f237_2a89a7dfe6134a74a7182caefc36ad73~mv2.png/v1/fill/w_1110,h_486,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/d9f237_2a89a7dfe6134a74a7182caefc36ad73~mv2.png)
+
+Image from: https://www.tensorops.ai/post/what-are-quantized-llms
+
+## LoRa (Low-Rank Adaptation)
+
+**LoRa** (Low-Rank Adaptation) is a technique for fine-tuning large pre-trained models efficiently. It focuses on adapting a small number of parameters while keeping most of the original model parameters unchanged. This method allows for effective customization of pre-trained models with less computational cost.
+
+### How LoRa Works
+
+1. **Low-Rank Decomposition**:
+   - Decomposes weight matrices into low-rank components.
+   - Only the low-rank components are updated during fine-tuning. This helps to reduce the number of parameters that need to be optimized, making the process more efficient.
+
+2. **Parameter Efficiency**:
+   - **Reduced Computational Overhead**: By updating only the low-rank components, the number of parameters to be trained is significantly reduced. This results in less computational power and memory usage compared to traditional fine-tuning methods.
+   - **Effective Adaptation**: The low-rank components capture the essential variations needed for the specific task or domain, allowing the model to adapt effectively without a full retraining of all parameters.
+
+3. **Implementation**:
+   - **Initialization**: Begin with a pre-trained model and decompose its weight matrices into low-rank approximations.
+   - **Fine-Tuning**: Train the low-rank components on the new dataset while keeping the original model weights frozen. This involves updating only the low-rank matrices.
+   - **Integration**: After fine-tuning, the updated low-rank components are integrated back into the model to make predictions on new data.
+
+### QLoRa (Quantized Low-Rank Adaptation)
+
+**QLoRa** is an extension of LoRa that combines the benefits of quantization with low-rank adaptation. It focuses on reducing the memory footprint and computational cost even further by quantizing the low-rank components.
+
+1. **Quantized Low-Rank Components**:
+   - Quantizes the low-rank components to lower precision (e.g., 8-bit integers).
+   - This reduces the storage and computational requirements of the fine-tuning process.
+
+2. **Why Use QLoRa**:
+   - **Increased Efficiency**: Combining quantization with LoRa allows for even greater reductions in model size and computation compared to using LoRa alone.
+   - **Memory Constraints**: Ideal for scenarios where hardware resources are limited, such as deployment on edge devices or mobile platforms.
+   - **Faster Inference**: Lower precision arithmetic operations speed up inference and reduce power consumption.
+
+3. **Implementation of QLoRa**:
+   - **Quantization**: Apply quantization to the low-rank components after decomposing the weight matrices.
+   - **Fine-Tuning**: Update the quantized low-rank components during fine-tuning.
+   - **Deployment**: Use the quantized model for inference, benefiting from reduced resource usage.
+
+### Benefits
+
+- **Efficiency**: Reduces time and computational resources needed for fine-tuning and inference.
+- **Scalability**: Makes it feasible to adapt large pre-trained models for specific tasks with limited hardware resources.
+- **Flexibility**: Allows for quick adjustments to pre-trained models for different tasks or domains without extensive retraining.
+- **Reduced Memory Usage**: Quantization further decreases memory footprint, making the model suitable for resource-constrained environments.
+
+### Example
+
+Imagine you have a large language model pre-trained on a general corpus and you want to fine-tune it for sentiment analysis on a specific dataset. Using LoRa, you decompose the model’s weight matrices into low-rank components and update these components with your sentiment analysis data. If you use QLoRa, you would quantize these low-rank components to save even more resources and accelerate inference.
+
 #### References
 [Complete Guide to Subword Tokenization Methods in the Neural Era](https://blog.octanove.org/guide-to-subword-tokenization/)
 [Summary of the tokenizers](https://huggingface.co/docs/transformers/tokenizer_summary)
 [Word Embedding: Basics](https://medium.com/@hari4om/word-embedding-d816f643140)
+[Parameter-Efficient Fine-Tuning of Large Language Models with LoRA and QLoRA](https://www.analyticsvidhya.com/blog/2023/08/lora-and-qlora/)
 
 
 <div class="footnotes">
