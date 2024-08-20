@@ -104,7 +104,7 @@ Image from: https://machinelearningmastery.com/a-gentle-introduction-to-position
 - **Original Weights**: 32-bit floating point values.
 - **Quantized Weights**: 8-bit integer values.
 
-[Example of Quantization](https://static.wixstatic.com/media/d9f237_2a89a7dfe6134a74a7182caefc36ad73~mv2.png/v1/fill/w_1110,h_486,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/d9f237_2a89a7dfe6134a74a7182caefc36ad73~mv2.png)
+![Example of Quantization](https://static.wixstatic.com/media/d9f237_2a89a7dfe6134a74a7182caefc36ad73~mv2.png/v1/fill/w_1110,h_486,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/d9f237_2a89a7dfe6134a74a7182caefc36ad73~mv2.png)
 
 Image from: https://www.tensorops.ai/post/what-are-quantized-llms
 
