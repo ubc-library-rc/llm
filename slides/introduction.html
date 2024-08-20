@@ -2,6 +2,30 @@
 <html lang="en">
 
 <head>
+  <style>
+	.highlight {
+		position: absolute;
+		border: 3px solid red;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	
+	.highlight.show {
+		opacity: 1;
+	}
+	
+	.container {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.highlight-1 { width: 150px; height: 150px; top: 50px; left: 100px; }
+	.highlight-2 { width: 200px; height: 200px; top: 200px; left: 300px; }
+	/* Add more highlight styles as needed */
+  </style>
+
+  <script src="highlight.js"></script>
+	  
   <meta charset="utf-8">
 
   <!-- Title of page (as it will appear in search results) -->
@@ -192,12 +216,17 @@
 
 		<section data-background="#e6f7ff">
 			<h3>Architecture of a typical LLM</h3>
-			<img height="500px" src="llm_architecture.jpeg">
-			<p style="color:blue;font-size:11px;"> From https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder</p>
+			<div class="container">
+				<div class="container">
+					<img height="500px" src="llm_architecture.jpeg" alt="LLM Architecture">
+					<div class="highlight highlight-1"></div>
+					<div class="highlight highlight-2"></div>
+					<!-- Add more highlight divs as needed -->
+				  </div>
+				  <p style="color:blue;font-size:11px;">From https://magazine.sebastianraschka.com/p/understanding-encoder-and-decoder</p>
 			<aside class="notes">
 				<p>
 					Some of the other applications of LLMs are:
-
 				</p>
 			</aside>
 			<!-- <ul>
