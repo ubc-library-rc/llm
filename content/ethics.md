@@ -33,10 +33,15 @@ The rapid rise in AI raises profound ethical concerns:
 
 3. **Lack of Explainability and Transparency:** LLMs are built on complex neural networks that perform extensive processing. Neural networks are often considered "black boxes," making it difficult to understand how deep neural networks make their decisions.
 
+
+## Final thought:
+When using LLMs as writing or research assistants, it is very important to consider how they can affect one's skills and ability to produce original work. It is essential to understand that the more we rely on LLMs to do complete or assist with our writing or researching tasks, it can diminish our skills and increase our reliance on such tools. Therefore, it is best to use LLMs only when necessary or when working with deadlines and tight schedules. To maintain and improve on existing skills such as writing, coding, or researching, one must deliberately practice constantly and attempt to produce original work.  
+
 ## Read More At
 
 1. [UNESCO Ethics of AI](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
 2. [Conceptualizing AI Literacy](https://go.exlibris.link/fFY0XLFX)
+3. [https://medium.com/@luiz_araujo/chatgpt-will-kill-your-writing-135576ae9655](ChatGPT Will Kill Your Writing)
 
 ---
 
