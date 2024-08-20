@@ -59,7 +59,7 @@ After pre-training, the model undergoes Fine-Tuning to adapt it to specific task
 - **Validation and Testing**: The model’s generalization capabilities are tested on separate validation and test datasets that were not used during training to ensure it performs well on unseen data.
 ![LLMs Training Steps](https://cdn.prod.website-files.com/63024b20439fa6bd66ee3465/655f00036738a7211d495d0b_S39XyPyFTeIptJ9ovxoji3hYk66n__xzmwI2N9e5bUNJGC5YVINJOwpxjxefWXQbY7OBcgflsDodEbZOk1D7iLLbLT0eRB4tDOfohtYu-fMoVS1JlsmA_ONfbJiozuu4_A0iOxqF0enxvY9zJABYtgo.png)
 
-Image from: https://www.supa.so/post/how-large-language-models-llms-learn
+Image from: (https://www.supa.so/post/how-large-language-models-llms-learn)
 
 ## Fine-Tuning Methods
 Various Fine-Tuning methods can be employed, including:
@@ -115,4 +115,5 @@ Various Fine-Tuning methods can be employed, including:
 Corpora (singular: "corpus") refers to large and structured sets of textual data. In the context of LLMs, corpora are collections of written or spoken texts that serve as the training data, helping the model to learn language patterns, syntax, semantics, and other linguistic elements. These datasets can include diverse sources such as books, research papers, websites, social media posts, and more, contributing to the richness and generalizability of the model's knowledge. <a href="#fnref1" class="footnote-back">↩</a>
 </li>
 </ol>
-</div
+</div>
+

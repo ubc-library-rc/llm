@@ -32,6 +32,13 @@ nav_order: 5
 ![Tokenization Example](https://miro.medium.com/v2/resize:fit:786/format:webp/1*gWP5Whykah1101EpYy17qQ.png)  
 _Image from: https://teetracker.medium.com/llm-fine-tuning-step-tokenizing-caebb280cfc2
 
+In the context of large language models (LLMs), the vocabulary used for tokenization is generally fixed before the pre-training phase of the model. This fixed vocabulary is created using a process that involves analyzing a large corpus of text with techniques such as Byte-Pair Encoding (BPE), WordPiece, or SentencePiece. The vocabulary is determined based on the most efficient set of subwords or tokens and is then used consistently throughout both the pre-training and fine-tuning stages.
+
+This vocabulary generation occurs during a setup phase, separate from the actual pre-training of the model. Once the vocabulary is established, it does not change during the model's training. This is distinct from the model learning to predict or understand sequences of these tokens, which happens during pre-training and fine-tuning.
+
+For example, if you have a pre-trained model like GPT-3 or BERT and want to fine-tune it on a task such as sentiment analysis or named entity recognition, you would use the same tokenizer (with its fixed vocabulary) that was used during the pre-training of the model. This ensures consistency in how the text is tokenized and processed by the model.
+
+This process is common in fine-tuning tasks because it ensures that the model's understanding of the tokenized text remains consistent across different phases, leading to better performance and easier integration.
 
 ## Embeddings
 
@@ -77,4 +84,6 @@ _Image from: https://teetracker.medium.com/llm-fine-tuning-step-tokenizing-caebb
 Image from: https://machinelearningmastery.com/a-gentle-introduction-to-positional-encoding-in-transformer-models-part-1/
 
 #### References
+[Complete Guide to Subword Tokenization Methods in the Neural Era](https://blog.octanove.org/guide-to-subword-tokenization/)
+[Summary of the tokenizers](https://huggingface.co/docs/transformers/tokenizer_summary)
 [Word Embedding: Basics](https://medium.com/@hari4om/word-embedding-d816f643140)
