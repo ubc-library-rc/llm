@@ -156,7 +156,7 @@ Image from: https://www.tensorops.ai/post/what-are-quantized-llms
 
 Imagine you have a large language model pre-trained on a general corpus and you want to fine-tune it for sentiment analysis on a specific dataset. Using LoRa, you decompose the model’s weight matrices into low-rank components and update these components with your sentiment analysis data. If you use QLoRa, you would quantize these low-rank components to save even more resources and accelerate inference.
 
-#### References
+## References
 [Complete Guide to Subword Tokenization Methods in the Neural Era](https://blog.octanove.org/guide-to-subword-tokenization/)
 [Summary of the tokenizers](https://huggingface.co/docs/transformers/tokenizer_summary)
 [Word Embedding: Basics](https://medium.com/@hari4om/word-embedding-d816f643140)
