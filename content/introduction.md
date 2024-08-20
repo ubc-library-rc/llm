@@ -64,28 +64,28 @@ Image from: (https://www.supa.so/post/how-large-language-models-llms-learn)
 ## Fine-Tuning Methods
 Various Fine-Tuning methods can be employed, including:
 
-#### 1. Supervised Fine-Tuning (SFT)
+### 1. Supervised Fine-Tuning (SFT)
 - **Dataset**: Uses a labeled dataset where each input has a known correct output or label. This dataset is used to refine the model’s performance on specific tasks.
 - **Process**: The model’s parameters are adjusted based on labeled examples to minimize the error between predictions and actual labels using supervised learning techniques such as classification or regression.
 - **Use Cases**: Effective for tasks requiring domain-specific knowledge or detailed understanding, such as sentiment analysis or named entity recognition.
 - **Challenges**: Requires high-quality labeled data, can suffer from overfitting if not managed carefully, and needs significant computational resources.
 
-#### 2. Unsupervised Fine-Tuning
+### 2. Unsupervised Fine-Tuning
 - **Self-Supervised Learning**: The model generates its own labels from the data, such as predicting masked words or sentences. Examples include masked language modeling.
 - **Contrastive Learning**: The model learns by comparing similar and dissimilar pairs of data, bringing similar examples closer in the representation space while pushing dissimilar ones apart.
 - **Use Cases**: Useful for learning from unlabeled data and improving representations or embeddings.
 
-#### 3. Reinforcement Learning Fine-Tuning
+### 3. Reinforcement Learning Fine-Tuning
 - **Reward-Based Training**: The model is trained based on rewards received for correct or desirable outputs. This feedback helps the model improve its decision-making over time.
 - **Policy Gradient Methods**: Adjusts the model parameters based on the gradient of the expected reward to maximize cumulative reward.
 - **Use Cases**: Effective in scenarios like conversational agents where the model’s responses are guided by user feedback or engagement metrics.
 
-#### 4. Domain-Adaptive Fine-Tuning
+### 4. Domain-Adaptive Fine-Tuning
 - **Domain Adaptation**: Fine-tunes the model on data from specific domains (e.g., medical, legal) to enhance performance in those areas while retaining general language understanding.
 - **Continual Learning**: Involves updating the model incrementally with new data from specific domains to keep it relevant without forgetting previously learned knowledge.
 - **Use Cases**: Tailors the model to specific industry or field requirements.
 
-#### 5. Multi-Task Fine-Tuning
+### 5. Multi-Task Fine-Tuning
 - **Shared Representations**: Trains the model on multiple tasks simultaneously, allowing it to learn common features and improve performance across tasks.
 - **Task-Specific Heads**: Employs different output layers (heads) for each task, enabling the model to specialize in each task while sharing underlying knowledge.
 - **Use Cases**: Improves performance on tasks like text classification, sentiment analysis, and translation by leveraging shared knowledge.
